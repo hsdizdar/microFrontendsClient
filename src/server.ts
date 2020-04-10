@@ -16,7 +16,7 @@ app.use(cors())
 app.get('/', async (req: Request, res: Response) => {
   const data = await getContents('http://localhost:81')
   console.log(data)
-  res.send('deneme')
+  res.send(data)
 })
 
 app.listen(PORT, () => {
